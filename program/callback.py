@@ -44,15 +44,15 @@ async def start_set(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Source", url="https://t.me/dlwrml"
                     )
                 ],
             ]
@@ -149,13 +149,13 @@ async def user_set(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✏️ Command list for all user.
 
-» /play (song name/link) - play music on video chat
+» /mplay (song name/link) - play music on video chat
 » /vplay (video name/link) - play video on video chat
 » /vstream (m3u8/yt live link) - play live stream video
 » /playlist - see the current playing song
 » /lyric (query) - scrap the song lyric
 » /video (query) - download video from youtube
-» /song (query) - download song from youtube
+» /download (query) - download song from youtube
 » /search (query) - search a youtube video link
 » /ping - show the bot ping status
 » /uptime - show the bot uptime status
